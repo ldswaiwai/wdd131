@@ -33,6 +33,12 @@ main {
     grid-column: 2/3;
 }
 
+main img {
+    max-width: 100%;
+    height:auto;
+    margin: 10px;
+}
+
 .right-sidebar {
     background: yellow;
     grid-column:3/4;
