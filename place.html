@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131-Country</title>
+    <meta name="description" content="WDD131-Country Page">  
+    <meta name="author" content="Gloria Lau">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hong Kong</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hk-wide.webp" media="(min-width: 768px)">
+                <source srcset="images/hk-small.webp" media="(max-width: 767px)">
+                <img src="images/hk-small.webp" alt="Hong Kong Night">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+
+            <label for="area">Area: </label>
+            <span id="area">1,064 mi&#178;</span><br>
+            
+            <label for="population">Population: </label>
+            <span id="population">7.346 million</span><br>
+
+            <label for="population-density">Population density: </label>
+            <span id="population-density">6751.87 people per km&#178;</span><br>
+
+            <label for="languages">Languages: </label>
+            <span id="languages">Cantonese, Mandarin, English</span><br>
+
+            <label for="currency">Currency: </label>
+            <span id="currency">Hong Kong dollar(HKD)</span><br>
+
+            <label for="time-zone">Time zone: </label>
+            <span id="time-zone">GMT+8</span><br>
+
+            <label for="calling-code">Calling code: </label>
+            <span id="calling-code">+852</span><br>
+
+            <label for="internet-tld">Internet TLD: </label>
+            <span id="internet-tld">.hk</span><br>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/clouds_sun_sunny_icon.svg" alt="clouds_sun_icon">
+            
+            <label for="temperature">Temperature: </label>
+            <span id="temperature">10&deg;C</span><br>
+
+            <label for="condition">Condition: </label>
+            <span id="condition">Mostly cloudy</span><br>
+
+            <label for="wind">Wind: </label>
+            <span id="wind">19 km/h</span><br>
+
+            <label for="wind-chill">Wind Chill: </label>
+            <span id="wind-chill">N/A</span><br>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> ✨Gloria Lau✨ Hong Kong</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+</body>
+</html>
