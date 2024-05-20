@@ -104,7 +104,7 @@ const temples = [
 function filterTemples(criteria) {
     switch (criteria) {
         case 'Old':
-            return temples.filter(temple => temple.dedicated.startsWith('19'));
+            return temples.filter(temple => temple.dedicated.startsWith('18'));
         case 'New':
             return temples.filter(temple => temple.dedicated.startsWith('20'));
         case 'Large':
