@@ -38,7 +38,7 @@
         content: "⛅";
         display: inline-block;
         margin-left: 20px;
-        size: 1.8rem;
+        resize: 1.8rem;
     }
     
     .weather img {
