@@ -111,10 +111,8 @@ function filterTemples(criteria) {
             return temples.filter(temple => temple.area > 90000);
         case 'Small':
             return temples.filter(temple => temple.area < 10000);
-        case 'Home':
-            return temples;
         default:
-            return [];
+            return temples;
     }
 }
 
@@ -145,4 +143,9 @@ navLinks.forEach(link => {
         const filteredTemples = filterTemples(criteria);
         displayTemples(filteredTemples);
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const defaultFilteredTemples = filterTemples('Home');
+    displayTemples(defaultFilteredTemples);
 });
