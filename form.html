@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131-Product Review Form</title>
+    <meta name="description" content="WDD131-Product Review Form">  
+    <meta name="author" content="Gloria Lau">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <select name="product" id="product">
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <label for="rating-1">1</label>
+                    <input type="radio" id="rating-1" name="rating" value="1" required>
+                    <label for="rating-2">2</label>
+                    <input type="radio" id="rating-2" name="rating" value="2" required>
+                    <label for="rating-3">3</label>
+                    <input type="radio" id="rating-3" name="rating" value="3" required>
+                    <label for="rating-4">4</label>
+                    <input type="radio" id="rating-4" name="rating" value="4" required>
+                    <label for="rating-1">5</label>
+                    <input type="radio" id="rating-5" name="rating" value="5" required>    
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+            <div class="form-group">
+                <label>Which features did you find useful in the product? <br>(Check all that apply)</label>
+                <div class="feature">
+                    <label for="feature-1">
+                        <input type="checkbox" id="feature-1" name='feature' value="Durability">
+                        Duribility
+                    </label>
+                    <label for="feature-2">
+                        <input type="checkbox" id="feature-2" name='feature' value="Ease of Use">
+                        Ease of Use
+                    </label>
+                    <label for="feature-3">
+                        <input type="checkbox" id="feature-3" name='feature' value="Performance">
+                        Performance
+                    </label>
+                    <label for="feature-4">
+                        <input type="checkbox" id="feature-4" name='feature' value="Design">
+                        Design
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="review">Written Review(Optional)</label>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="username">Your Name(Optional)</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Post review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> ✨Gloria Lau✨ Hong Kong</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131-Review Confirmation</title>
+    <meta name="description" content="WDD131-Review Confirmation">  
+    <meta name="author" content="Gloria Lau">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+    <main>
+        <p>Thank you for submitting your review!</p>
+        <p>You have submitted <span id="review-count"></span> reviews so far.</p>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> ✨Gloria Lau✨ Hong Kong</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reviewCount = localStorage.getItem('reviewCount') || 0;
+            const newCount = parseInt(reviewCount) + 1;
+            localStorage.setItem('reviewCount', newCount);
+            document.getElementById('review-count').textContent = newCount;
+        });
+    </script>    
+</body>
+</html>
+        
