@@ -17,6 +17,42 @@ main {
     color: var(--text-color)
 }
 
+header, nav {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.logo {
+    max-height: 120px;
+    border-radius: 120px;
+}
+
 footer {
     grid-column: 1/3;
     grid-row: 3;
